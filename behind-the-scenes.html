@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <head>
+    <!-- Basic Meta Tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="7ovreighn">
+    <meta name="description" content="Official website of 7ovreighn – Music, Visualizers, Behind-the-Scenes, and Merch. Follow me on Spotify, YouTube, TikTok, and more!">
+    <meta name="keywords" content="7ovreighn, music, rapper, singer, visualizers, behind the scenes, merch, indie music, Spotify, YouTube">
+    
+    <!-- Open Graph Meta Tags (For Social Media Sharing) -->
+    <meta property="og:title" content="7ovreighn | Official Website">
+    <meta property="og:description" content="Explore my music, visualizers, behind-the-scenes content, and upcoming merch. Follow me on social media!">
+    <meta property="og:image" content="https://yourwebsite.com/images/og-image.jpg">
+    <meta property="og:url" content="https://yourwebsite.com">
+    <meta property="og:type" content="website">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="7ovreighn | Official Website">
+    <meta name="twitter:description" content="Check out my latest music, videos, and behind-the-scenes content.">
+    <meta name="twitter:image" content="https://yourwebsite.com/images/twitter-card.jpg">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://yourwebsite.com">
+  </head>
+  
+  <title>Behind the Scenes</title>
+  <link rel="stylesheet" href="behind-the-scenes.css">
+</head>
+<body>
+  <header class="bts-header">
+    <h1>Behind the Scenes</h1>
+    <p>Explore casual moments, stories, and behind-the-scenes content!</p>
+  </header>
+
+  <main class="bts-content">
+    <!-- Gallery Section -->
+    <section class="bts-gallery">
+      <h2>Gallery</h2>
+      <div class="gallery-grid">
+        <!-- Example Image Card -->
+        <div class="gallery-item">
+          <img src="Images/462642936_430222306457654_4379285119117033190_n.jpg" alt="Casual Moment 1">
+          <p>jamming</p>
+        </div>
+        <div class="gallery-item">
+          <img src="Images/462535372_1505154716798065_785982982142991061_n.jpg" alt="Casual Moment 2">
+          <p>Welcome to Skobo Nation </p>
+        </div>
+        <!-- Add more images here -->
+      </div>
+    </section>
+
+    <!-- Video Playlist Section -->
+    <section class="bts-videos">
+      <h2>Videos</h2>
+      <div class="video-playlist">
+        <!-- Example Video Card -->
+        <div class="video-item">
+          <iframe
+            width="300"
+            height="170"
+            src="Images/474897654_9097660340288285_3706420343550828372_n.mp4"
+            title="Behind the Scenes Video"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+          <p>I need love in the studio </p>
+        </div>
+            </div>
+            
+      </div>
+    </section>
+
+    <!-- Upload Section -->
+    <section class="bts-upload">
+      <h2>Upload Your Content</h2>
+      <form id="upload-form">
+        <label for="file-upload">Choose an image or video to upload:</label>
+        <input type="file" id="file-upload" name="file-upload" accept="image/*,video/*">
+        <textarea
+          id="caption"
+          name="caption"
+          placeholder="Add a caption or description..."
+        ></textarea>
+        <button type="submit">Upload</button>
+        <p id="upload-message"></p>
+      </form>
+    </section>
+  </main>
+
+  <script src="scripts.js"></script>
+</body>
+</html>

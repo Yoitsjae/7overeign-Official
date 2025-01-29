@@ -1,0 +1,276 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  background-color: #121212;
+  color: #ffffff;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  margin: 0;
+  background: #6a0572;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+header {
+  text-align: center;
+  height: 100vh;
+  background: linear-gradient(to right, #ff0044, #6a0572);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-content h1 {
+  font-size: 4rem;
+}
+a:focus, button:focus {
+  outline: 3px solid #ff0044;
+}
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+.button {
+  background:  #ff0044b3;
+  display: inline-block;
+  padding: 12px 20px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  margin-top: 20px;
+  transition: 0.3s;
+}
+
+.button:hover {
+  background: linear-gradient(to right, #52c53e, #000000);
+}
+
+section {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+#musicGrid, #merchGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+#latest-music {
+  text-align: center;
+  background-color: #121212; /* Dark Spotify Theme */
+  padding: 40px;
+  border-radius: 10px;
+}
+
+#latest-music h2 {
+  color: #1DB954; /* Spotify Green */
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.spotify-button {
+  display: inline-block;
+  padding: 12px 20px;
+  background-color: #1db951;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  margin-top: 20px;
+  transition: 0.3s;
+}
+
+.spotify-button:hover {
+  background: linear-gradient(to right, #52c53e, #000000);
+}
+
+/* Follow Me Section */
+#followMe {
+  text-align: center;
+  padding: 2rem 1rem;
+  background-color: #121212; /* Dark theme */
+  color: #ffffff;
+}
+
+#followMe h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #ff0044; /* Vibrant accent color */
+}
+
+.social-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.social-links .btn {
+  text-decoration: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 50px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #ffffff;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+}
+
+.social-links .btn:hover {
+  transform: translateY(-5px);
+  border-color: #ff0044; /* Accent color on hover */
+  box-shadow: 0 4px 10px rgba(255, 0, 68, 0.4);
+}
+
+/* Custom Colors for Each Button */
+.btn.facebook { background: #1877f2; }
+.btn.tiktok { background: #000000; }
+.btn.twitter { background: #1da1f2; }
+.btn.soundcloud { background: #e1c6b8; }
+.btn.youtube { background: #ff0000; }
+.btn.bandlab { background: #ff111f; }
+.btn.spotify { background: #1db954; }
+.btn.instagram { background: linear-gradient(45deg, #fd1d1d, #833ab4); }
+
+/* Merch Coming Soon Section */
+.merch-section {
+  text-align: center;
+  padding: 2rem 1rem;
+  background-color: #121212; /* Dark theme */
+  color: #ffffff;
+  margin-top: 2rem;
+}
+
+.merch-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #ff0044; /* Accent color */
+}
+
+.merch-section p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.merch-placeholder {
+  position: relative;
+  margin: 1rem auto;
+  width: 300px;
+  height: 300px;
+}
+
+.merch-placeholder img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+@media (max-width: 768px) {
+  .social-links {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
+
+.progress-bar {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  width: 80%;
+  height: 10px;
+  background-color: #333;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.progress-bar .progress {
+  width: 0%;
+  height: 100%;
+  background-color: #ff0044;
+  transition: width 2s ease-in-out;
+}
+
+.signup-form {
+  margin-top: 2rem;
+}
+
+.signup-form input {
+  padding: 0.8rem;
+  font-size: 1rem;
+  border: 2px solid #ff0044;
+  border-radius: 50px;
+  outline: none;
+  width: 60%;
+  margin-right: 0.5rem;
+}
+
+.signup-form button {
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 50px;
+  background-color: #ff0044;
+  color: #ffffff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.signup-form button:hover {
+  background-color: #ff3366;
+}
+
+.confirmation-message {
+  margin-top: 1rem;
+  color: #00ff44;
+  font-weight: bold;
+}
+@media (max-width: 768px) {
+  .signup-form input {
+    width: 80%;
+    margin-bottom: 1rem;
+    display: block;
+  }
+
+  .signup-form button {
+    width: 80%;
+  }
+}
+
+/* Footer Styles */
+.site-footer {
+  background: #000000;
+  color: #ffffff;
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: #ffffff;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: #ff0044;
+}
