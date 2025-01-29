@@ -33,6 +33,17 @@ header {
   justify-content: center;
   align-items: center;
 }
+.logo {
+  width: 150px; /* Adjust size as needed */
+  height: auto;
+  display: block;
+  border-radius: 50%;
+}
+nav .logo {
+  height: 100px;
+  width: auto;
+  margin-right: 20px;
+}
 
 .hero-content h1 {
   font-size: 4rem;
