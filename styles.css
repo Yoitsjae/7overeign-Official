@@ -113,6 +113,82 @@ section {
 .spotify-button:hover {
   background: linear-gradient(to right, #52c53e, #000000);
 }
+/* Merch Grid */
+.merch-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.merch-item {
+  width: 200px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.merch-item:hover {
+  transform: scale(1.05);
+}
+
+/* Popup Styles */
+.popup-overlay {
+  display: none;
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.8);
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.popup-content {
+  background: #1f1f1f;
+  padding: 30px;
+  border-radius: 10px;
+  text-align: center;
+  width: 90%;
+  max-width: 400px;
+  position: relative;
+}
+
+.popup-content h3 {
+  margin-bottom: 20px;
+  color: #ff0044;
+}
+
+.popup-content input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: none;
+}
+
+.popup-content button {
+  padding: 10px 20px;
+  background-color: #ff0044;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.close-popup {
+  position: absolute;
+  top: 10px; right: 15px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #ffffff;
+}
+
+#form-message {
+  margin-top: 15px;
+  color: #1DB954;
+}
 
 /* Follow Me Section */
 #followMe {

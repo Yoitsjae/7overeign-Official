@@ -139,23 +139,36 @@
   </section>
   
 
-  <section id="merchComingSoon" class="merch-section">
-    <h2>Merch Coming Soon!</h2>
-    <p>Exciting merchandise is on the way. Be the first to know when it drops!</p>
-    <div class="merch-placeholder">
-      <img src="Images/7overeign.jpg" alt="Merch Coming Soon" />
-      <div class="progress-bar">
-        <div class="progress"></div>
-      </div>
-    </div>
-    <form id="signupForm" class="signup-form">
-      <input type="email" id="emailInput" name="email" placeholder="Enter your email" required />
-      <button type="submit">Sign Up for Updates</button>
+  <!-- Merch Section -->
+<section id="merch">
+  <h2>Merchandise</h2>
+  <div class="merch-grid">
+    <img src="Images/T-SHIET.png" alt="7overeighn T-Shirt" class="merch-item" data-item="7overeighn T-Shirt">
+    <img src="Images/T-SHIRT 2.png" alt="7overeighn T-Shirt" class="merch-item" data-item="7overeighn T-Shirt">
+    <img src="Images/ChatGPT Image.png" alt="7overeighn T-Shirt" class="merch-item" data-item="7overeighn T-Shirt">
+    <img src="Images/HOODIE 1.png" alt="7overeighn Hoodie" class="merch-item" data-item="7overeighn Hoodie">
+    <img src="Images/HOODIE 2.png" alt="7overeighn T-Shirt" class="merch-item" data-item="7overeighn T-Shirt">
+    <img src="Images/HOODIE 3.png" alt="7overeighn T-Shirt" class="merch-item" data-item="7overeighn T-Shirt">
+    <img src="Images/CAP.png" alt="7overeighn Cap" class="merch-item" data-item="7overeighn Cap">
+    <img src="Images/CAP 2.png" alt="7overeighn T-Shirt" class="merch-item" data-item="7overeighn T-Shirt">
+  </div>
+</section>
+
+<!-- Merch Popup Form -->
+<div id="merch-popup" class="popup-overlay">
+  <div class="popup-content">
+    <span class="close-popup">&times;</span>
+    <h3>Request Now: <span id="selected-item"></span></h3>
+    <form id="merch-form">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <input type="text" name="phone" placeholder="Your Phone Number" required>
+      <button type="submit">Send Request</button>
     </form>
-    <p id="confirmationMessage" class="confirmation-message" style="display: none;">
-      Thank you for signing up! We'll keep you updated.
-    </p>
-  </section>
+    <p id="form-message"></p>
+  </div>
+</div>
+
   
 
   <section id="tour">

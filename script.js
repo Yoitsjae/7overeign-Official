@@ -65,6 +65,59 @@ document.addEventListener("DOMContentLoaded", () => {
   form.addEventListener("submit", (e) => {
     e.preventDefault();
     const emailInput = document.getElementById("emailInput").value;
+// Show popup when merch item clicked
+const merchItems = document.querySelectorAll('.merch-item');
+const popup = document.getElementById('merch-popup');
+const closeBtn = document.querySelector('.close-popup');
+const selectedItem = document.getElementById('selected-item');
+
+merchItems.forEach(item => {
+  item.addEventListener('click', () => {
+    selectedItem.textContent = item.dataset.item;
+    popup.style.display = 'flex';
+  });
+});
+
+// Close popup
+closeBtn.addEventListener('click', () => {
+  popup.style.display = 'none';
+  document.getElementById('merch-form').reset();
+  document.getElementById('form-message').textContent = '';
+});
+
+// Close when clicking outside the popup
+window.addEventListener('click', (e) => {
+  if(e.target === popup) {
+    popup.style.display = 'none';
+    document.getElementById('merch-form').reset();
+    document.getElementById('form-message').textContent = '';
+  }
+});
+
+// Send merch request via EmailJS
+document.getElementById('merch-form').addEventListener('submit', function(e) {
+  e.preventDefault();
+
+  const serviceID = 'YOUR_EMAILJS_SERVICE_ID';
+  const templateID = 'YOUR_EMAILJS_TEMPLATE_ID';
+
+  const form = e.target;
+  const templateParams = {
+    item: selectedItem.textContent,
+    name: form.name.value,
+    email: form.email.value,
+    phone: form.phone.value
+  };
+
+  emailjs.send(serviceID, templateID, templateParams)
+    .then(() => {
+      document.getElementById('form-message').textContent = "Thank you! We will get back to you shortly.";
+      form.reset();
+    }, (err) => {
+      document.getElementById('form-message').textContent = "Oops! Something went wrong. Try again.";
+      console.error(err);
+    });
+});
 
     // Simulate API request (you can replace this with actual API integration)
     setTimeout(() => {
